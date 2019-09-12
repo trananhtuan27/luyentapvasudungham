@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function revert(number1, number2) {
+        let arr = [number1, number2];
+        arr.reverse();
+        return arr;
+    }
+    let number1 = Number(prompt("enter the number 1:"));
+    let number2 = Number(prompt("enter the number 2:"));
+    let result = revert(number1, number2);
+    alert(number1 + ", " + number2 + " đổi từ  " + result);
+</script>
+</body>
+</html>

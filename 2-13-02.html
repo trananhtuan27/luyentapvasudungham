@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Tính diện tích hình tròn</legend>
+        Bánkính : <input type="number" id="bankinh1">
+        <button type="button" onclick="banKinh()">Kết quả</button>
+        <div id="ketqua"></div>
+        <script>
+            function banKinh() {
+                let a = document.getElementById("bankinh1").value;
+                dientich = a*a*3.14;
+                document.getElementById("ketqua").innerHTML = "Diện tích là" + dientich;
+            }
+
+
+        </script>
+
+    </fieldset>
+</form>
+<form>
+    <fieldset>
+        <legend>Tính chu vi hình tròn</legend>
+        <input type="number" id="duongkinh">
+        <button type="button" onclick="chuvi()">Kếtquả</button>
+        <div id="ketqua1"></div>
+        <script>
+            function chuvi() {
+                let duongkinh = document.getElementById("duongkinh").value;
+                x = duongkinh * 3.14;
+                document.getElementById("ketqua1").innerHTML = "Chu vi là" + x;
+            }
+        </script>
+    </fieldset>
+</form>
+</body>
+</html>
